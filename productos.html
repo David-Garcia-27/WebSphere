@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Nabla&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.png"/>
+</head>
+<body style="background-image: url(Images/black_colorful_minimalist_artistic_shapes_4k_hd_abstract.jpg);">
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">WebSphere</a></div>
+            <ul class="links">
+                <li><a class="link" href="index.html" style="display: none;">Home</a></li>
+                <li><a class="link" href="productos.html">Nuestros productos</a></li>
+                <li><a class="link" href="sobre.html">Sobre nosotros</a></li>
+                <li><a class="link" href="servicios.html">Servicios</a></li>
+                <li><a class="link" href="contacto.html">Contacto</a></li>
+            </ul>
+            <a href="inicio.html" class="action_btn">Inicia Sesión</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a class="link" href="index.html">Home</a></li>
+            <li><a class="link" href="productos.html">Nuestros productos</a></li>
+            <li><a class="link" href="sobre.html">Sobre nosotros</a></li>
+            <li><a class="link" href="servicios.html">Servicios</a></li>
+            <li><a class="link" href="contacto.html">Contacto</a></li>
+            <li><a href="inicio.html" class="action_btn">Inicia Sesión</a></li>
+        </div>
+    </header>
+
+    <div class="productos">
+        <section class="contenedor">
+            <div>
+                <img src="Images/Monitor.png" alt="Monitor ASUS ROG 540hz">
+            </div>
+        
+            <div>
+                <img src="Images/Teclado.png" alt="Teclado mecánico ASUS ROG">
+            </div>
+            <div>
+                <img src="Images/logi.png" alt="Ratón Logitech MX3 master"> 
+            </div>
+            <div>
+                <img src="Images/tecladologi.png" alt="Teclado mecánico Logitech MX">
+            </div>
+            <div>
+                <img src="Images/zonevibelogi.png" alt="">
+            </div>
+            <div>
+                <img src="Images/favicon.png" alt="logo WebSphere" style="width: 25%;">
+                    <br>
+                LLEGAN YA NUESTROS MEJORES PRODUCTOS
+            </div>
+            <div>
+                7
+            </div>
+            <div>
+                8
+            </div>
+            <div>
+                9
+            </div>
+            <div>
+                10
+            </div>
+            <div>
+                11
+            </div>
+        </section>
+    </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>
